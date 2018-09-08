@@ -12,14 +12,14 @@
 	<h1 id="title">Jonesport/Beals Boats Survey</h1>
 	<div id="form-outer" class="container">
 		<p id="description">How Was Your Boating Experience In Jonesport/Beals?</p>
-		
+
 		<form id="survey-form" action="action_page.php">
 
 			<div class="rowTab">
 				<div class="labels">
 					<label id="name-label" for="name">Name</label>
 				</div>
-				<div>
+				<div class="rightTab">
 					<input type="text" id="name" name="name" placeholder="Your name..." required>
 				</div>
 			</div>
@@ -28,16 +28,16 @@
 				<div class="labels">
 					<label id="email-label" for="email">Email</label>
 				</div>
-				<div>
+				<div class="rightTab">
 					<input type="text" id="email" name="email" placeholder="Your email..." required>
 				</div>
 			</div>
-			
+
 			<div class="rowTab">
 				<div class="labels">
 					<label id="number-label" for="number">Please rate your trip on a scale of 1 to 10</label>
 				</div>
-				<div>
+				<div class="rightTab">
 					<input type="number" id="number" name="number" min="1" max="10" placeholder="" required><br><br>
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 				<div class="labels">
 					<label id="dropdownlabel" for="dropdown">Which best resembles our boat?</label>
 				</div>
-				<div>
+				<div class="rightTab">
 					<select id="dropdown" name="dropdown">
 						<option value="compact">Compact Car</option>
 						<option value="wagon">Station Wagon</option>
@@ -64,7 +64,7 @@
 				<div class="labels">
 					<label id="comment-label" for="comment">Comment</label>
 				</div>
-				<div>
+				<div class="rightTab">
 					<textarea id="comment" name="comment" placeholder="Please opine here..." ></textarea>
 				</div>
 			</div>

@@ -1,8 +1,9 @@
 
       /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
 
-body {
-  background-color: ;
+html, body {
+ /* overflow: hidden;
+    height: 100%;*/
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -80,4 +81,9 @@ input[type=submit]:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+}
+#title {
+  text-align: center;
+  padding: 20px;
+
 }
