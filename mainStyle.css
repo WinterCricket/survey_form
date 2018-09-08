@@ -2,7 +2,7 @@
       /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
 
 body {
-  background-color: lightseagreen;
+  background-color: ;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -35,7 +35,7 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color: ;
+    background-color: dodgerblue;
     padding: 20px;
 }
 
