@@ -2,52 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="mainStyle.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
 	<title>Old Downeast Boats Experience</title>
 </head>
 <body>
 	
 	<h1 id="title">Jonesport/Beals Boats Survey</h1>
 	<div id="form-outer" class="container">
-	<p id="description">How Was Your Boating Experience In Jonesport/Beals?</p>
-	
-  <form id="survey-form" action="action_page.php">
+		<p id="description">How Was Your Boating Experience In Jonesport/Beals?</p>
+		
+		<form id="survey-form" action="action_page.php">
 
-    <label id="name" for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..." required>
+			<div class="rowTab">
+				<div class="labels">
+					<label id="name-label" for="name">Name</label>
+				</div>
+				<div>
+					<input type="text" id="name" name="name" placeholder="Your name..." required>
+				</div>
+			</div>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email..." required>
+			<div class="rowTab">
+				<div class="labels">
+					<label id="email-label" for="email">Email</label>
+				</div>
+				<div>
+					<input type="text" id="email" name="email" placeholder="Your email..." required>
+				</div>
+			</div>
+			
+			<div class="rowTab">
+				<div class="labels">
+					<label id="number-label" for="number">Please rate your trip on a scale of 1 to 10</label>
+				</div>
+				<div>
+					<input type="number" id="number" name="number" min="1" max="10" placeholder="" required><br><br>
+				</div>
+			</div>
 
-	<p id="description">Below, please rate our boats on a scale of 1 to 10:</p>
+			<div class="rowTab">
+				<div class="labels">
+					<label id="dropdownlabel" for="dropdown">Which best resembles our boat?</label>
+				</div>
+				<div>
+					<select id="dropdown" name="dropdown">
+						<option value="compact">Compact Car</option>
+						<option value="wagon">Station Wagon</option>
+						<option value="van">Van</option>
+						<option value="bus">School Bus</option>
+						<option value="touring">Touring Bus</option>
+						<option value="limo">Stretch Limo</option>
+						<option value="other">Other (tractor, garbage truck, tricycle, etc.)</option>
 
-    <label for="number">Rating</label>
-    <input type="number" id="number" name="number" min="1" max="10" placeholder="" required><br><br>
+					</select>
+				</div>
+			</div>
 
-    <label for="world-view">World View</label>
-    <select id="world-view" name="world-vew">
-      <option value="animist">Animist</option>
-      <option value="pantheist">Pantheist</option>
-      <option value="deist">Deist</option>
-      <option value="theist">Theist</option>
-      <option value="atheist">Atheist</option>
-      <option value="librettist">Librettis</option>
-      <option value="other">Other</option>
-
-    </select>
-
-    <label for="comment">Comment</label>
-    <textarea id="comment" name="comment" placeholder="Please opine here..." ></textarea>
-
-    <input type="submit" value="Submit">
-
-  
+			<div class="rowTab">
+				<div class="labels">
+					<label id="comment-label" for="comment">Comment</label>
+				</div>
+				<div>
+					<textarea id="comment" name="comment" placeholder="Please opine here..." ></textarea>
+				</div>
+			</div>
+			<input type="submit" value="Submit">
 
 
-
-	</form> 
-</div>
+		</form> 
+	</div>
 	<a href="https://www.w3schools.com">Visit W3Schools.com!</a><br>
 	<a href="https://www.w3schools.com/css/css_grid.asp">W3Schools Grid</a><br>
 	<a href="https://github.com/WinterCricket">GitHub</a><br>
