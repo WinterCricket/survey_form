@@ -2,58 +2,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="mainStyle.css">
 	<title>Old Downeast Boats Experience</title>
 </head>
 <body>
 	
-	<h1 id="title">Old Downeast Boats</h1>
-	<p id="description">Please let us know about your worst boating experience </p>
-	<form action="" id="survey-form">
-		<div id="rowTab">
-			<div class="labels">
-				<label id="name-label" for="name">Your Name: </label>
-			</div>
+	<h1 id="title">Old Downeast Boats Survey</h1>
+	<p id="description">What Is Your Boating Complaint?</p>
+	<div class="container">
+  <form action="action_page.php">
 
-			<div id="rightTab">
-				<input autofocus type="text" name="name" id="name" placeholder="Enter your name here" required>
-			</div>
-		</div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-		<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-		<div id="rowTab">
-			<div class="labels">
-				<label id="email-label" for="email">Your Email: </label>
-			</div>
-			<div id="rightTab">
-				<input autofocus type="text" name="email" id="email" placeholder="Enter your email here" required>
-			</div>
-		</div>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 
-		<br>
+    <label for="subject">Subject</label>
+    <textarea id="comment" name="comment" placeholder="Please opine here..." style="height:200px"></textarea>
 
-		<div id="rowTab">
-			<div class="labels">
-				<label id="number-label" for="number">Yearly Wages: </label>
-			</div>
-			<div id="rightTab">
-				<input autofocus type="number" name="number" id="number" placeholder="Enter your wages here" required>
-			</div>
-		</div>
+    <input type="submit" value="Submit">
 
-		<br>
-
-		<div id="rowTab">
-			<div class="labels">
-				<label id="comment-label" for="comment">Please Comment: </label>
-			</div>
-			<div id="rightTab">
-				<textarea autofocus type="text" name="comment" id="comment" placeholder="Enter your comment here" required></textarea>
-			</div>
-		</div> 
-
-		<br><br>
-		<input type="submit" value="Submit">
+  </form>
+</div>
 
 
 	</form> 
