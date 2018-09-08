@@ -7,30 +7,40 @@
 </head>
 <body>
 	
-	<h1 id="title">Old Downeast Boats Survey</h1>
-	<p id="description">What Is Your Boating Complaint?</p>
+	<h1 id="title">Jonesport/Beals Boats Survey</h1>
+	<p id="description">How Was Your Boating Experience In Jonesport/Beals?</p>
 	<div class="container">
-  <form action="action_page.php">
+  <form id="survey-form" action="action_page.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label id="name" for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..." required>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..." required>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+	<p id="description">Below, please rate our boats on a scale of 1 to 10:</p>
+
+    <label for="number">Rating</label>
+    <input type="number" id="number" name="number" placeholder="Your number rating..." required><br><br>
+
+    <label for="world-view">World View</label>
+    <select id="world-view" name="world-vew" required>
+      <option value="animist">Animist</option>
+      <option value="pantheist">Pantheist</option>
+      <option value="deist">Deist</option>
+      <option value="theist">Theist</option>
+      <option value="atheist">Atheist</option>
+      <option value="librettist">Librettis</option>
+      <option value="other">Other</option>
+
     </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="comment" name="comment" placeholder="Please opine here..." style="height:200px"></textarea>
+    <label for="comment">Comment</label>
+    <textarea id="comment" name="comment" placeholder="Please opine here..." ></textarea>
 
     <input type="submit" value="Submit">
 
-  </form>
+  
 </div>
 
 
@@ -39,7 +49,7 @@
 	<a href="https://www.w3schools.com">Visit W3Schools.com!</a><br>
 	<a href="https://www.w3schools.com/css/css_grid.asp">W3Schools Grid</a><br>
 	<a href="https://github.com/WinterCricket">GitHub</a><br>
-	<a href="https://www.freecodecamp.org/">FCC</a><br><br>
+	<a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form">FCC</a><br><br>
 	<a href="https://codepen.io/freeCodeCamp/full/VPaoNP">FCC: Survey Form</a><br>
 	<a href="https://www.youtube.com/watch?v=PQ22pgaXog4">FCC radio</a>
 </body>
