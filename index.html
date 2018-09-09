@@ -9,9 +9,9 @@
 </head>
 <body>
 	
-	<h1 id="title">Jonesport/Beals Boats Survey</h1>
+	<h1 id="title">Jonesport Boat Survey</h1>
 	<div id="form-outer" >
-		<p id="description">How Was Your Boating Experience In Jonesport/Beals?</p>
+		<p id="description">How Was Your Jonesport Boating Experience?</p>
 
 		<form id="survey-form" action="action_page.php">
 
@@ -38,16 +38,17 @@
 					<label id="number-label" for="number" >Your trip from 1 to 10</label>
 				</div>
 				<div class="rightTab">
-					<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="" required><br><br>
+					<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="Select a number..." required><br><br>
 				</div>
 			</div>
 
 			<div class="rowTab">
 				<div class="labels">
-					<label id="dropdownlabel" for="dropdown">Which best resembles our boat?</label>
+					<label  for="dropdown">Which best resembles our boat?</label>
 				</div>
 				<div class="rightTab">
-					<select id="dropdown" name="dropdown" class="input-field">
+					<select id="dropdown" name="dropdown" class="input-field dropdown-content" placeholder="Select a vehicle">
+						<option disabled value>Select a vehicle</option>
 						<option value="compact">Compact Car</option>
 						<option value="wagon">Station Wagon</option>
 						<option value="van">Van</option>
