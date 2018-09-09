@@ -8,8 +8,9 @@ body {
 }
 
 .boatImage {
-  /*background-image: url(oldboats.jpg);*/ 
-    background-color: #cccccc;
+  /*background-image: url("oldboats.jpg");*/ 
+   /* background-color: #cccccc;*/
+   background-image: url("nightwalk.jpg");
   height: 800px;
   background-position: center;
   background-repeat: no-repeat;
