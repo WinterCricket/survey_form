@@ -2,14 +2,22 @@
       /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
 
 body {
-    background-color:  
-    text-align: center;
-    font-family: 'Raleway', Helvetica, sans-serif;
-    min-width: 320px;
+    
+    
+    
 }
-body {
 
+.boatImage {
+  /*background-image: url(oldboats.jpg);*/ 
+    background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
+
 
 p {
   text-align: center;
@@ -61,11 +69,11 @@ label {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+/*.container {
     border-radius: 5px;
     background-color:  background-color: rgba(200, 200, 20, 0.3);;
     padding: 20px;
-}
+}*/
 
 .labels {
     display: inline-block;
@@ -83,9 +91,9 @@ label {
     border: 1px solid #c0c0c0;
     border-radius: 2px;
   }
-  .input-field:hover {
-    background-color: rgba(200, 200, 20, 0.3);
-  }
+  /*.input-field:hover {
+    background-color: rgba(100, 200, 180, 0.7);
+  }*/
 
   .rightTab {
     display: inline-block;
@@ -129,7 +137,7 @@ label {
   /*height: 80%;
   width: 80%;*/
   margin: 20px;
-  background-color: white;
+  background-color: rgba(250, 250, 250, 0.5);
 
 
 
