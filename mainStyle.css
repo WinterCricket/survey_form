@@ -71,6 +71,15 @@ label {
     cursor: default;
 }
 
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    color: gray;
+}
+
 /* Add a background color and some padding around the form */
 /*.container {
     border-radius: 5px;
@@ -116,6 +125,8 @@ label {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
 }
+
+
 
 #name, #email, #number, #dropdown, #comment{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
