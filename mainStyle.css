@@ -93,6 +93,7 @@ label {
     margin: 10px;
     border: 1px solid #c0c0c0;
     border-radius: 2px;
+    font-size: 10px;
   }
   /*.input-field:hover {
     background-color: rgba(100, 200, 180, 0.7);
@@ -187,4 +188,33 @@ label {
     padding: 10px;
     padding-top: 20px;
     z-index: 1;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  #title {
+    font-size:30px;
+  }
 }
