@@ -1,23 +1,20 @@
 
       /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
 
-body {
-    
-    
-    
-}
-
-.boatImage {
-  /*background-image: url("oldboats.jpg");*/ 
-   /* background-color: #cccccc;*/
-   background-image: url("nightwalk.jpg");
-  height: 800px;
+html, body {
+    background-image: url("nightwalk.jpg");
+  text-align: center;
+ /* font-family: 'Raleway', Helvetica, sans-serif;*/
+  min-width: 320px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-attachment: fixed;
+  background-attachment: fixed
+
 }
+
+
 
 
 p {
@@ -38,7 +35,7 @@ form {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-/*input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%; 
     padding: 12px;  
     border: 1px solid #ccc; 
@@ -49,7 +46,7 @@ form {
 
 }
 
-/* Style the submit button with a specific background color etc */
+/* Style the submit button with a specific background color etc 
 input[type=submit] {
     background-color: black;
     color: white;
@@ -79,13 +76,31 @@ option {
     padding: 0px 2px 1px;
     color: gray;
 }
+select {
+    width: 100%;
+  }
 
-/* Add a background color and some padding around the form */
-/*.container {
-    border-radius: 5px;
-    background-color:  background-color: rgba(200, 200, 20, 0.3);;
-    padding: 20px;
+
+/*.nightwalk {
+  
+   background-image: url("nightwalk.jpg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }*/
+
+#form-outer {
+ 
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
 
 .labels {
     display: inline-block;
@@ -102,7 +117,8 @@ option {
     margin: 10px;
     border: 1px solid #c0c0c0;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 13px;
+
   }
   /*.input-field:hover {
     background-color: rgba(100, 200, 180, 0.7);
@@ -132,11 +148,12 @@ option {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     width: 50%;
+
     
 }
 
 #name {
-
+  
 }
 
 #email {
@@ -147,7 +164,7 @@ option {
 }
 
 #comment {
-  height:200px;
+  height:120px;
 }
 #survey-form {
   /*height: 80%;
@@ -159,15 +176,15 @@ option {
 
 
 }
-#form-outer {
+/*#form-outer {
   /*background-color: lightgray;*/
-  height: 90%;
+ /* height: 90%;
   width: 90%;
   border-radius: 5px;
     background-color: 
     padding: 20px;
     z-index: 2;
-}
+}*/
 
 #dropdown {
 
@@ -201,6 +218,14 @@ option {
     z-index: 1;
 }
 
+.radioButton, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 833px) {
   .input-field {
     width: 80%;
@@ -226,6 +251,26 @@ option {
     width: 100%;
   }
   #title {
-    font-size:30px;
+    font-size: 30px;
   }
+  #survey-form {
+    height: 90%;
+  }
+}
+
+
+
+::placeholder {
+    color: gray;
+    opacity: 0.4; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: gray;
+    opacity: 0.4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: gray;
+    opacity: 0.4;
 }
