@@ -14,7 +14,7 @@
 		<div id="form-outer" >
 			<p id="description">How Was Your Visit?</p>
 
-			<form id="survey-form" action="action_page.php">
+			<form id="survey-form" action="">
 
 				<div class="rowTab">
 					<div class="labels">
@@ -39,17 +39,17 @@
 						<label id="number-label" for="number" >Your trip from 1 to 10</label>
 					</div>
 					<div class="rightTab">
-						<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="Number" required><br><br>
+						<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="Number" required>
 					</div>
 				</div>
 
 				<div class="rowTab">
 					<div class="labels">
-						<label  for="dropdown">Which vehicle would you most expect here?</label>
+						<label  for="dropdown">Which vehicle would you most use here?</label>
 					</div>
 					<div class="rightTab">
-						<select id="dropdown" name="dropdown" class="dropdown" placeholder="Vehicle">
-							<option disabled value>Select a vehicle</option>
+						<select id="dropdown" name="dropdown" class="dropdown">
+							<option disabled selected value>Select a vehicle</option>
 							<option value="compact">Compact Car</option>
 							<option value="wagon">Station Wagon</option>
 							<option value="van">Van</option>
@@ -68,7 +68,7 @@
 				<div class="rowTab">
 
 					<div class="labels">
-						<label for="citizenStyle">* Which sort of resident will you be here?</label>
+						<label for="citizenStyle">Which sort of resident will you be here?</label>
 					</div>
 
 					<div class="rightTab">
@@ -77,31 +77,31 @@
 
 							<li class="radioButtons">
 								<label>
-									<input name="radioButtons" value="1" type="radio" class="citizenStyle">Homesick College Student 
+									<input name="radioButtons" value="student" type="radio" class="citizenStyle">Homesick College Student 
 								</label>
 							</li>
 
 							<li class="radioButtons">
 								<label>
-									<input name="radioButtons" value="2" type="radio" class="citizenStyle">Middle Age Depressive Male
+									<input name="radioButtons" value="man" type="radio" class="citizenStyle">Mid-life Depressive Male
 								</label>
 							</li>
 
 							<li class="radioButtons">
 								<label>
-									<input name="radioButtons" value="3" type="radio" class="citizenStyle">Spinster of the 19th Century
+									<input name="radioButtons" value="lady" type="radio" class="citizenStyle">Spinster of the 19th Century
 								</label>
 							</li>
 
 							<li class="radioButtons">
 								<label>
-									<input name="radioButtons" value="3" type="radio" class="citizenStyle">Milk Carton Child
+									<input name="radioButtons" value="kid" type="radio" class="citizenStyle">Milk Carton Child
 								</label>
 							</li>
 
 							<li class="radioButtons">
 								<label>
-									<input name="radioButtons" value="3" type="radio" class="citizenStyle">Single Mother of Two
+									<input name="radioButtons" value="ma" type="radio" class="citizenStyle">Single Mother of Two
 								</label>
 							</li>
 
