@@ -8,7 +8,8 @@
 
 
 html, body {
-  background-image: url("nightwalk.jpg");
+ /* background-image: url("nightwalk.jpg");*/
+ background-image: url("http://media.npr.org/assets/img/2016/02/17/42-74085360_custom-d032fcdd6855666a07534f90ca25bf986efe6e62-s1100-c15.jpg");
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;;
   min-width: 320px;
@@ -24,8 +25,6 @@ html, body {
   text-align: center;
   padding: 20px;
   color: white;
-
-  
 
 
 }
@@ -278,6 +277,7 @@ select {
         margin-left: 100px;
       }
     }
+
     @media screen and (max-width: 650px) {
       #number {
         width: 100%;
@@ -326,6 +326,7 @@ select {
       }
       
 }
+
     ::placeholder {
       color: gray;
       opacity: 0.4; /* Firefox */
