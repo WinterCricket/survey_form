@@ -12,122 +12,154 @@
 <body >
 	
 
-		<h1 id="title">Neighborhood Survey</h1>
-		<div id="form-outer" >
-			<p id="description">How Was Your Visit?</p>
+	<h1 id="title">Neighborhood Survey</h1>
+	<div id="form-outer" >
+		<p id="description">How Was Your Visit?</p>
 
-			<form id="survey-form" action="">
+		<form id="survey-form" action="">
 
-				<div class="rowTab">
-					<div class="labels">
-						<label id="name-label" for="name">Name</label>
-					</div>
-					<div class="rightTab">
-						<input type="text" id="name" name="name" class="input-field" placeholder="Name" required>
-					</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label id="name-label" for="name">Name</label>
+				</div>
+				<div class="rightTab">
+					<input type="text" id="name" name="name" class="input-field" placeholder="Name" required>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<div class="labels">
+					<label id="email-label" for="email">Email</label>
+				</div>
+				<div class="rightTab">
+					<input type="text" id="email" name="email" class="input-field" placeholder="Email" required>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<div class="labels">
+					<label id="number-label" for="number" >Rate your trip from 1 (worsts) to 10 </label>
+				</div>
+				<div class="rightTab">
+					<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="Number" required>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<div class="labels">
+					<label  for="dropdown">Which vehicle would you most use here?</label>
+				</div>
+				<div class="rightTab">
+					<select id="dropdown" name="dropdown" class="dropdown">
+						<option disabled selected value>Select a vehicle</option>
+						<option value="compact">Compact Car</option>
+						<option value="wagon">Station Wagon</option>
+						<option value="van">Van</option>
+						<option value="bus">School Bus</option>
+						<option value="touring">Touring Bus</option>
+						<option value="limo">Stretch Limo</option>
+						<option value="other">Other (tractor, etc.)</option>
+
+					</select>
+				</div>
+			</div>
+
+
+
+
+			<div class="rowTab">
+
+				<div class="labels">
+					<label for="citizenStyle">Which sort of resident will you be here?</label>
 				</div>
 
-				<div class="rowTab">
-					<div class="labels">
-						<label id="email-label" for="email">Email</label>
-					</div>
-					<div class="rightTab">
-						<input type="text" id="email" name="email" class="input-field" placeholder="Email" required>
-					</div>
-				</div>
+				<div class="rightTab">
 
-				<div class="rowTab">
-					<div class="labels">
-						<label id="number-label" for="number" >Rate your trip from 1 (worst) to 10 </label>
-					</div>
-					<div class="rightTab">
-						<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="Number" required>
-					</div>
-				</div>
+					<ul style="list-style: none;">
 
-				<div class="rowTab">
-					<div class="labels">
-						<label  for="dropdown">Which vehicle would you most use here?</label>
-					</div>
-					<div class="rightTab">
-						<select id="dropdown" name="dropdown" class="dropdown">
-							<option disabled selected value>Select a vehicle</option>
-							<option value="compact">Compact Car</option>
-							<option value="wagon">Station Wagon</option>
-							<option value="van">Van</option>
-							<option value="bus">School Bus</option>
-							<option value="touring">Touring Bus</option>
-							<option value="limo">Stretch Limo</option>
-							<option value="other">Other (tractor, etc.)</option>
+						<li class="radioButtons">
+							<label>
+								<input name="radioButtons" value="student" type="radio" class="citizenStyle">Homesick College Student 
+							</label>
+						</li>
 
-						</select>
-					</div>
-				</div>
+						<li class="radioButtons">
+							<label>
+								<input name="radioButtons" value="man" type="radio" class="citizenStyle">Mid-life Depressive Male
+							</label>
+						</li>
 
+						<li class="radioButtons">
+							<label>
+								<input name="radioButtons" value="lady" type="radio" class="citizenStyle">Spinster of the 19th Century
+							</label>
+						</li>
 
+						<li class="radioButtons">
+							<label>
+								<input name="radioButtons" value="kid" type="radio" class="citizenStyle">Milk Carton Child
+							</label>
+						</li>
 
+						<li class="radioButtons">
+							<label>
+								<input name="radioButtons" value="ma" type="radio" class="citizenStyle">Single Mother of Two
+							</label>
+						</li>
 
-				<div class="rowTab">
-
-					<div class="labels">
-						<label for="citizenStyle">Which sort of resident will you be here?</label>
-					</div>
-
-					<div class="rightTab">
-
-						<ul style="list-style: none;">
-
-							<li class="radioButtons">
-								<label>
-									<input name="radioButtons" value="student" type="radio" class="citizenStyle">Homesick College Student 
-								</label>
-							</li>
-
-							<li class="radioButtons">
-								<label>
-									<input name="radioButtons" value="man" type="radio" class="citizenStyle">Mid-life Depressive Male
-								</label>
-							</li>
-
-							<li class="radioButtons">
-								<label>
-									<input name="radioButtons" value="lady" type="radio" class="citizenStyle">Spinster of the 19th Century
-								</label>
-							</li>
-
-							<li class="radioButtons">
-								<label>
-									<input name="radioButtons" value="kid" type="radio" class="citizenStyle">Milk Carton Child
-								</label>
-							</li>
-
-							<li class="radioButtons">
-								<label>
-									<input name="radioButtons" value="ma" type="radio" class="citizenStyle">Single Mother of Two
-								</label>
-							</li>
-
-						</ul>
-
-					</div>
+					</ul>
 
 				</div>
 
+			</div>
 
-				<div class="rowTab">
-					<div class="labels">
-						<label id="comment-label" for="comment">Comment</label>
-					</div>
-					<div class="rightTab">
-						<textarea id="comment" name="comment" class="input-field" placeholder="Comment"  ></textarea>
-					</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="hoodstyle">
+
+					</label>
 				</div>
-				<div class="leftTab">
+				<div class="rightTab">
+					<ul id="hoodstyle">
+						<li class="checkbox">
+							<label>
+								<input name="prefer" value="park" type="checkbox" class="userRatings">Traffic Island Park
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input name="prefer" value="dogpark" type="checkbox" class="userRatings">Running Dog Park
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input name="prefer" value="playground" type="checkbox" class="userRatings">Playground for the Idle
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input name="prefer" value="coypond" type="checkbox" class="userRatings">Coy Pond for Cats and You
+							</label>
+						</li>
+					</ul>
+				</div>					
+			</div>
+
+
+			<div class="rowTab">
+				<div class="labels">
+					<label id="comment-label" for="comment">Comment</label>
+				</div>
+				<div class="rightTab">
+					<textarea id="comment" name="comment" class="input-field" placeholder="Comment"  ></textarea>
+				</div>
+			</div>
+			<div class="leftTab">
 				<input type="submit" class="submit" value="Submit">
-</div>
+			</div>
 
-			</form> 
-		</div>
+		</form> 
+	</div>
 	
 	
 </body>
