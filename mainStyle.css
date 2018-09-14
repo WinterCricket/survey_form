@@ -238,9 +238,9 @@ select {
 
   
 
-.radioButton, .checkbox {
+.radioButtons, .checkbox {
   position: relative;
-  left: -43px;
+  left: 0px;
   margin-left: 10px;
   display: block;
   padding-bottom: 10px;
