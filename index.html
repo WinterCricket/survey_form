@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
 	<link rel="stylesheet" href="mainStyle.css">
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	 -->
+	
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Neighborhood Survey</title>
 </head>
@@ -37,7 +38,7 @@
 
 				<div class="rowTab">
 					<div class="labels">
-						<label id="number-label" for="number" >Your trip from 1 to 10</label>
+						<label id="number-label" for="number" >Rate your trip from 1 (worst) to 10 </label>
 					</div>
 					<div class="rightTab">
 						<input type="number" id="number" name="number" class="input-field" min="1" max="10" placeholder="Number" required>
@@ -57,7 +58,7 @@
 							<option value="bus">School Bus</option>
 							<option value="touring">Touring Bus</option>
 							<option value="limo">Stretch Limo</option>
-							<option value="other">Other (tractor, garbage truck, tricycle, etc.)</option>
+							<option value="other">Other (tractor, etc.)</option>
 
 						</select>
 					</div>
@@ -121,8 +122,9 @@
 						<textarea id="comment" name="comment" class="input-field" placeholder="Comment"  ></textarea>
 					</div>
 				</div>
-				<input type="submit" class="" value="Submit">
-
+				<div class="leftTab">
+				<input type="submit" class="submit" value="Submit">
+</div>
 
 			</form> 
 		</div>

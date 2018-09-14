@@ -10,7 +10,7 @@
 html, body {
     background-image: url("nightwalk.jpg");
   text-align: center;
- /* font-family: 'Raleway', Helvetica, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;;
   min-width: 320px;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +24,7 @@ html, body {
   text-align: center;
   padding: 20px;
   color: white;
+
   
 
 
@@ -144,6 +145,12 @@ select {
     width: 48%;
     vertical-align: middle;
 }
+.leftTab {
+    display: inline-block;
+    text-align: right;
+    width: 38%;
+    vertical-align: middle;
+}
 
 .dropdown-content {
   display: none;
@@ -239,7 +246,13 @@ select {
   padding-bottom: 10px;
 }
 
+.submit {
+  background-color: #445C6E;
+  color: white;
+  height: 40px;
+  width: 50%;
 
+}
 
 
 
@@ -250,6 +263,8 @@ select {
   select {
     width: 90%;
   }
+  
+  
 }
 
 @media screen and (max-width: 650px) {
@@ -261,6 +276,8 @@ select {
     width: 80%;
     float: left;
   }
+
+  
   .input-field {
     width: 100%;
   }
@@ -273,7 +290,9 @@ select {
   #survey-form {
     height: 90%;
   }
-
+.submit {
+  width: 100%;
+}
   #name, #email, #dropdown, #comment{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
