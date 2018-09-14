@@ -1,5 +1,11 @@
 
       /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 html, body {
     background-image: url("nightwalk.jpg");
@@ -233,7 +239,11 @@ select {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 833px) {
+
+
+
+
+@media screen and (min-width: 950px) {
   .input-field {
     width: 80%;
   }
@@ -242,7 +252,7 @@ select {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 650px) {
   .labels {
     width: 100%;
     text-align: left;
